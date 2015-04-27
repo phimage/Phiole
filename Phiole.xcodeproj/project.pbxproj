@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C460439D1AEA382B00C0ED49 /* Console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Console; sourceTree = BUILT_PRODUCTS_DIR; };
+		C460439D1AEA382B00C0ED49 /* Phiole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Phiole; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46043A01AEA382B00C0ED49 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C46043A71AEA383C00C0ED49 /* Phiole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phiole.swift; sourceTree = "<group>"; };
 		C46B4C131AEE26D500B95F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		C460439E1AEA382B00C0ED49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C460439D1AEA382B00C0ED49 /* Console */,
+				C460439D1AEA382B00C0ED49 /* Phiole */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 			);
 			name = Phiole;
 			productName = Console;
-			productReference = C460439D1AEA382B00C0ED49 /* Console */;
+			productReference = C460439D1AEA382B00C0ED49 /* Phiole */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
