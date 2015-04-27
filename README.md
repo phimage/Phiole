@@ -1,17 +1,77 @@
-# Console
+# Phiole - Φole
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat
+            )](http://mit-license.org)
+[![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
+             )](https://developer.apple.com/resources/)
+[![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
+             )](https://developer.apple.com/swift)
+[![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
+           )](https://github.com/phimage/Phiole/issues)
 
-Simple object to wrap standards input, output and error stream to write or read
+Simple object to wrap three [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html): 'output', 'error' to write and 'input' to read
 
-Exemple in [main.swift](/Console/main.swift)
+There is of course a default instance for [standard streams](http://en.wikipedia.org/wiki/Standard_streams)
+```swift
+let csl = Phiole.std
+```
 
-# Todo #
-Allow to readline for files (not only standard input)
+This object could be used in script instead of using `println()`.
+This adds the following abilities : 
+* Write to a file by declaring transparently an NSFileHandle as output
+* Write to error stream
+* Read from input stream
 
-# Licence #
+[Swift scripts: How to write small command line scripts in Swift](http://practicalswift.com/2014/06/07/swift-scripts-how-to-write-small-command-line-scripts-in-swift/)
+
+/!\ Phiole is not a login system. Use instead project like [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
+
+# Usage
+## Write to ouput
+```swift
+csl.println("write string and pass to the new line")
+csl.print("write string without new line")
+csl.println() // write new line
+```
+## Write to error
+```swift
+csl.errorln("write an error")
+```
+## Read from input
+```swift
+if line = csl.readLine() {
+  // do something
+}
+```
+## Writing to a file
+Create the file handle for writing (file must exist)
+```swift
+if let fileHandle = NSFileHandle(forWritingAtPath: "myoutput.file") { ..
+```
+Initialize the console object
+```swift
+var newCsl = csl.withOutput(fileHandle)
+// or with more code
+var newCsl = Phiole(input: input: Phiols.std.input, output: fileHandle, error: Phiols.std.error)
+```
+Write as usual
+```swift
+newCsl.println("write to a file")
+```
+Finally don't forget to close the file handle
+```swift
+fileHandle.closeFile()
+```
+
+More examples in [main.swift](/Phiole/main.swift)
+
+##  Todo
+Allow to readline for files (not only standard input), by splitting line on line delimiter
+
+##  Licence
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Eric Marchand
+Copyright (c) 2015 Eric Marchand (phimage)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

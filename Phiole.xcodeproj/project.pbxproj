@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C46043A11AEA382B00C0ED49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A01AEA382B00C0ED49 /* main.swift */; };
-		C46043A81AEA383C00C0ED49 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A71AEA383C00C0ED49 /* Console.swift */; };
+		C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A71AEA383C00C0ED49 /* Phiole.swift */; };
+		C46B4C141AEE26D500B95F6B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C46B4C131AEE26D500B95F6B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,8 @@
 /* Begin PBXFileReference section */
 		C460439D1AEA382B00C0ED49 /* Console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Console; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46043A01AEA382B00C0ED49 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		C46043A71AEA383C00C0ED49 /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Console.swift; path = ../Console.swift; sourceTree = "<group>"; };
+		C46043A71AEA383C00C0ED49 /* Phiole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phiole.swift; sourceTree = "<group>"; };
+		C46B4C131AEE26D500B95F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,9 @@
 		C46043941AEA382B00C0ED49 = {
 			isa = PBXGroup;
 			children = (
-				C460439F1AEA382B00C0ED49 /* Console */,
+				C46B4C131AEE26D500B95F6B /* README.md */,
+				C46043A71AEA383C00C0ED49 /* Phiole.swift */,
+				C460439F1AEA382B00C0ED49 /* Phiole */,
 				C460439E1AEA382B00C0ED49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,21 +60,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C460439F1AEA382B00C0ED49 /* Console */ = {
+		C460439F1AEA382B00C0ED49 /* Phiole */ = {
 			isa = PBXGroup;
 			children = (
 				C46043A01AEA382B00C0ED49 /* main.swift */,
-				C46043A71AEA383C00C0ED49 /* Console.swift */,
 			);
-			path = Console;
+			path = Phiole;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C460439C1AEA382B00C0ED49 /* Console */ = {
+		C460439C1AEA382B00C0ED49 /* Phiole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C46043A41AEA382B00C0ED49 /* Build configuration list for PBXNativeTarget "Console" */;
+			buildConfigurationList = C46043A41AEA382B00C0ED49 /* Build configuration list for PBXNativeTarget "Phiole" */;
 			buildPhases = (
 				C46043991AEA382B00C0ED49 /* Sources */,
 				C460439A1AEA382B00C0ED49 /* Frameworks */,
@@ -80,7 +83,7 @@
 			);
 			dependencies = (
 			);
-			name = Console;
+			name = Phiole;
 			productName = Console;
 			productReference = C460439D1AEA382B00C0ED49 /* Console */;
 			productType = "com.apple.product-type.tool";
@@ -99,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C46043981AEA382B00C0ED49 /* Build configuration list for PBXProject "Console" */;
+			buildConfigurationList = C46043981AEA382B00C0ED49 /* Build configuration list for PBXProject "Phiole" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C460439C1AEA382B00C0ED49 /* Console */,
+				C460439C1AEA382B00C0ED49 /* Phiole */,
 			);
 		};
 /* End PBXProject section */
@@ -121,8 +124,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46B4C141AEE26D500B95F6B /* README.md in Sources */,
 				C46043A11AEA382B00C0ED49 /* main.swift in Sources */,
-				C46043A81AEA383C00C0ED49 /* Console.swift in Sources */,
+				C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +228,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C46043981AEA382B00C0ED49 /* Build configuration list for PBXProject "Console" */ = {
+		C46043981AEA382B00C0ED49 /* Build configuration list for PBXProject "Phiole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C46043A21AEA382B00C0ED49 /* Debug */,
@@ -233,7 +237,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C46043A41AEA382B00C0ED49 /* Build configuration list for PBXNativeTarget "Console" */ = {
+		C46043A41AEA382B00C0ED49 /* Build configuration list for PBXNativeTarget "Phiole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C46043A51AEA382B00C0ED49 /* Debug */,
