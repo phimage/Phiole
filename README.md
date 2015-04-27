@@ -8,6 +8,8 @@
 [![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
            )](https://github.com/phimage/Phiole/issues)
 
+![Logo](/logo-128x128.png)
+
 Simple object to wrap three [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html): 'output', 'error' to write and 'input' to read
 
 There is of course a default instance for [standard streams](http://en.wikipedia.org/wiki/Standard_streams)
@@ -91,3 +93,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+# Logo #
+By [kodlian] (http://www.kodlian.com/), inspired by [apple swift logo](http://en.wikipedia.org/wiki/File:Apple_Swift_Logo.png)
+## Why a logo?
+I like to see an image for each of my project when I browse them with [SourceTree](http://www.sourcetreeapp.com/)
