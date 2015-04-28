@@ -1,5 +1,5 @@
 # Phiole - Φole
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org)
 [![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
              )](https://developer.apple.com/resources/)
@@ -8,7 +8,7 @@
 [![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
            )](https://github.com/phimage/Phiole/issues)
 
-![Logo](/logo-128x128.png)
+[<img align="left" src="/logo-128x128.png" hspace="20">](#logo)
 
 Simple object to wrap three [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html): 'output', 'error' to write and 'input' to read
 
@@ -17,28 +17,28 @@ There is of course a default instance for [standard streams](http://en.wikipedia
 let csl = Phiole.std
 ```
 
-This object could be used in script instead of using `println()`.
+This object could be used in script or CLI application instead of using `println()`.
 This adds the following abilities : 
-* Write to a file by declaring transparently an NSFileHandle as output
+* Write to a file by declaring transparently an [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html) as output stream
 * Write to error stream
 * Read from input stream
 
 [Swift scripts: How to write small command line scripts in Swift](http://practicalswift.com/2014/06/07/swift-scripts-how-to-write-small-command-line-scripts-in-swift/)
 
-/!\ Phiole is not a login system. Use instead project like [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
+:warning: Phiole is not a login system. Use instead project like [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
 # Usage
-## Write to ouput
+## Write to ouput stream
 ```swift
 csl.println("write string and pass to the new line")
 csl.print("write string without new line")
 csl.println() // write new line
 ```
-## Write to error
+## Write to error stream
 ```swift
 csl.errorln("write an error")
 ```
-## Read from input
+## Read from user input
 ```swift
 if line = csl.readLine() {
   // do something
@@ -96,5 +96,5 @@ SOFTWARE.
 
 # Logo #
 By [kodlian] (http://www.kodlian.com/), inspired by [apple swift logo](http://en.wikipedia.org/wiki/File:Apple_Swift_Logo.png)
-## Why a logo?
-I like to see an image for each of my project when I browse them with [SourceTree](http://www.sourcetreeapp.com/)
+### Why a logo?
+I like to see an image for each of my projects when I browse them with [SourceTree](http://www.sourcetreeapp.com/)
