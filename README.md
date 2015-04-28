@@ -64,10 +64,22 @@ Finally don't forget to close the file handle
 fileHandle.closeFile()
 ```
 
-More examples in [main.swift](/Phiole/main.swift)
+## More examples
+In [main.swift](/Phiole/main.swift) or [Natalie (generate code from storyboard and ouput to standard stream or specified file)](https://github.com/phimage/Natalie/blob/console/natalie.swift)
 
 ##  Todo
 Allow to readline for files (not only standard input), by splitting line on line delimiter
+
+# Setup #
+
+## Copy/Paste ##
+Just copy/paste code with licence in your script, or import swift file in your CLI project
+
+## Using [cocoapods](http://cocoapods.org/) ##
+
+Add `pod 'Phiole', :git => 'https://github.com/phimage/Phiole.git'` to your `Podfile` and run `pod install`. 
+
+Add `use_frameworks!` to the end of the `Podfile`.
 
 ##  Licence
 ```

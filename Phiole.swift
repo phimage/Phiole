@@ -58,15 +58,15 @@ public class Phiole {
     }
     
     // MARK: clone altered
-    func withOutput(output: NSFileHandle) -> Phiole {
+    public func withOutput(output: NSFileHandle) -> Phiole {
         return Phiole(input: self.input, output: output, error: self.error)
     }
     
-    func withError(error: NSFileHandle) -> Phiole {
+    public func withError(error: NSFileHandle) -> Phiole {
         return Phiole(input: self.input, output: self.output, error: error)
     }
 
-    func withInput(input: NSFileHandle) -> Phiole {
+    public func withInput(input: NSFileHandle) -> Phiole {
         return Phiole(input: input, output: self.output, error: self.error)
     }
     
@@ -93,7 +93,7 @@ public class Phiole {
         return Phiole.readFrom(self.input)
     }
     
-    func readlines(stopClosure: (String) -> Bool) {
+    public func readlines(stopClosure: (String) -> Bool) {
         var line = readline()
         while line != nil {
             if stopClosure(line!) {
