@@ -64,11 +64,31 @@ Finally don't forget to close the file handle
 fileHandle.closeFile()
 ```
 
+## Add some colors in terminal or xcode
+You can manually add color with decorated method
+```
+csl.println(Phiole.Color.green.fg("write in red"))
+```
+Or for all ouputs
+```
+csl.outputColor = .Green
+csl.errorColor = .Red
+... write here ...
+
+// reset
+csl.outputColor = .None
+```
+
+### For Xcode
+**XcodeColors** is a simple plugin for Xcode, it allows you to use colors in the Xcode debugging console.
+
+Full installation instructions can be found on the XcodeColors project page:  
+https://github.com/robbiehanson/XcodeColors
+
+Then you must add environment variable `XcodeColors` = `YES` in your Scheme
+
 ## More examples
 In [main.swift](/Phiole/main.swift) or [Natalie (generate code from storyboard and ouput to standard stream or specified file)](https://github.com/phimage/Natalie/blob/console/natalie.swift)
-
-##  Todo
-Allow to readline for files (not only standard input), by splitting line on line delimiter
 
 # Setup #
 
