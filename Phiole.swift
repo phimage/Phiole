@@ -53,8 +53,10 @@ public class Phiole {
     public var output: NSFileHandle
     public var error: NSFileHandle
 
+    // reader for input file handle
     private var reader: FileHandleReader? = nil
     
+    // Bool to deactivate default colorization
     public var colorize: Bool = true
     public var outputColor: Color = Color.None {
         didSet {
@@ -66,7 +68,6 @@ public class Phiole {
             colorize = true
         }
     }
-
     
     // MARK: init
     public init(input: NSFileHandle, output: NSFileHandle, error: NSFileHandle) {
@@ -135,9 +136,11 @@ public class Phiole {
         Phiole.writeTo(error, decorate("\(object)", withColor: errorColor) + Phiole.LINE_DELIMITER)
     }
     
-    // MARK: privates
+    // MARK: class func
     public class func writeTo(handle: NSFileHandle, _ string: String) {
-        handle.writeData(string.dataUsingEncoding(NSUTF8StringEncoding)!)
+        if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
+            handle.writeData(data)
+        }
     }
     
     public class func readFrom(handle: NSFileHandle) -> String? {
@@ -168,30 +171,13 @@ public class Phiole {
         return string
     }
 
-    public enum Color: String {
-        case Black  = "black"
-        case Red    = "red"
-        case Green  = "green"
-        case Yellow = "yellow"
-        case Blue   = "blue"
-        case Cyan   = "cyan"
-        case Purple = "purple"
-        case Gray   = "gray"
-        
-        case DarkGray      = "darkGray"
-        case BrightRed     = "brightRed"
-        case BrightGreen   = "brightGreen"
-        case BrightYellow  = "brightYellow"
-        case BrightBlue    = "brightBlue"
-        case BrightMagenta = "brightMagenta"
-        case BrightCyan    = "brightCyan"
-        case White         = "white"
-        
-        case None = "none"
+    public enum Color {
+        case Black, Red, Green, Yellow, Blue, Cyan, Purple, Gray,
+        DarkGray,BrightRed,BrightGreen,BrightYellow,BrightBlue,BrightMagenta,BrightCyan,White,
+        None
         
         public static let allValues = [Black,Red,Green,Yellow,Blue,Cyan,Purple,Gray,
             DarkGray,BrightRed,BrightGreen,BrightYellow,BrightBlue,BrightMagenta,BrightCyan,White,None]
-      
         
         public static let ESCAPE_SEQUENCE = "\u{001b}["
         public static let TERMINAL_COLORS_RESET = "\u{0030}\u{006d}"

@@ -53,13 +53,15 @@ Initialize the console object
 ```swift
 var newCsl = csl.withOutput(fileHandle)
 // or with more code
-var newCsl = Phiole(input: input: Phiols.std.input, output: fileHandle, error: Phiols.std.error)
+var newCsl = Phiole(input: input: Phiols.std.input, 
+                    output: fileHandle, error: Phiols.std.error)
 ```
 Write as usual
 ```swift
 newCsl.println("write to a file")
+...
 ```
-Finally don't forget to close the file handle
+Finally don't forget to close the file handle at the end
 ```swift
 fileHandle.closeFile()
 ```
@@ -77,7 +79,11 @@ csl.errorColor = .Red
 
 // reset
 csl.outputColor = .None
+csl.errorColor = .None
+// or deactivate
+csl.colorize = false
 ```
+Color shortcuts could be added as you can see in [Phiole+Shortcut](/Phiole+ColorShortcut.swift)
 
 ### For Xcode
 **XcodeColors** is a simple plugin for Xcode, it allows you to use colors in the Xcode debugging console.
@@ -93,7 +99,7 @@ In [main.swift](/Phiole/main.swift) or [Natalie (generate code from storyboard a
 # Setup #
 
 ## Copy/Paste ##
-Just copy/paste code with licence in your script, or import swift file in your CLI project
+Just copy/paste code with licence in your script, or import swift files or project in your CLI project
 
 ## Using [cocoapods](http://cocoapods.org/) ##
 

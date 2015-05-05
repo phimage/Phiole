@@ -10,6 +10,7 @@
 		C46043A11AEA382B00C0ED49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A01AEA382B00C0ED49 /* main.swift */; };
 		C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A71AEA383C00C0ED49 /* Phiole.swift */; };
 		C46B4C141AEE26D500B95F6B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C46B4C131AEE26D500B95F6B /* README.md */; };
+		C4D606681AF8CAA600E941B6 /* Phiole+ColorShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		C46043A01AEA382B00C0ED49 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C46043A71AEA383C00C0ED49 /* Phiole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phiole.swift; sourceTree = "<group>"; };
 		C46B4C131AEE26D500B95F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Phiole+ColorShortcut.swift"; sourceTree = "<group>"; };
+		C4D606691AF8CABF00E941B6 /* Phiole.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Phiole.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +48,9 @@
 		C46043941AEA382B00C0ED49 = {
 			isa = PBXGroup;
 			children = (
-				C46B4C131AEE26D500B95F6B /* README.md */,
 				C46043A71AEA383C00C0ED49 /* Phiole.swift */,
+				C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */,
+				C4D6066A1AF8CAD100E941B6 /* Info */,
 				C460439F1AEA382B00C0ED49 /* Phiole */,
 				C460439E1AEA382B00C0ED49 /* Products */,
 			);
@@ -66,6 +70,15 @@
 				C46043A01AEA382B00C0ED49 /* main.swift */,
 			);
 			path = Phiole;
+			sourceTree = "<group>";
+		};
+		C4D6066A1AF8CAD100E941B6 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				C4D606691AF8CABF00E941B6 /* Phiole.podspec */,
+				C46B4C131AEE26D500B95F6B /* README.md */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D606681AF8CAA600E941B6 /* Phiole+ColorShortcut.swift in Sources */,
 				C46B4C141AEE26D500B95F6B /* README.md in Sources */,
 				C46043A11AEA382B00C0ED49 /* main.swift in Sources */,
 				C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */,
