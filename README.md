@@ -1,14 +1,11 @@
 # Phiole - Φole
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-            )](http://mit-license.org)
-[![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
-             )](https://developer.apple.com/resources/)
-[![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
-             )](https://developer.apple.com/swift)
-[![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
+            )](http://mit-license.org) [![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
+             )](https://developer.apple.com/resources/) [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
+             )](https://developer.apple.com/swift) [![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
            )](https://github.com/phimage/Phiole/issues)
 
-[<img align="left" src="/logo-128x128.png" hspace="20">](#logo)
+[<img align="left" src="logo-128x128.png" hspace="20">](#logo)
 
 Simple object to wrap three [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html): 'output', 'error' to write and 'input' to read
 
@@ -67,7 +64,9 @@ fileHandle.closeFile()
 ```
 
 ## Add some colors in terminal or xcode
-You can manually add color with decorated method
+
+You can manually add color with decorated method ( see
+[`PhioleColor.swift`](/PhioleColor.swift))
 ```
 csl.println(Phiole.Color.green.fg("write in red"))
 ```
@@ -103,7 +102,7 @@ Just copy/paste code with licence in your script, or import swift files or proje
 
 ## Using [cocoapods](http://cocoapods.org/) ##
 
-Add `pod 'Phiole', :git => 'https://github.com/phimage/Phiole.git'` to your `Podfile` and run `pod install`. 
+Add `pod 'Phiole', :git => 'https://github.com/phimage/Phiole.git'` to your `Podfile` and run `pod install`.
 
 Add `use_frameworks!` to the end of the `Podfile`.
 

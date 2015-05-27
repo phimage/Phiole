@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PhioleColor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C460439C1AEA382B00C0ED49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4EBB8381B15CA560075187B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

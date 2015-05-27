@@ -10,11 +10,23 @@
 		C46043A11AEA382B00C0ED49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A01AEA382B00C0ED49 /* main.swift */; };
 		C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A71AEA383C00C0ED49 /* Phiole.swift */; };
 		C46B4C141AEE26D500B95F6B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C46B4C131AEE26D500B95F6B /* README.md */; };
-		C4D606681AF8CAA600E941B6 /* Phiole+ColorShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */; };
+		C4EBB83C1B15CA560075187B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB83B1B15CA560075187B /* main.swift */; };
+		C4EBB8401B15CA5F0075187B /* PhioleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB8331B15C2900075187B /* PhioleColor.swift */; };
+		C4EBB8411B15CA610075187B /* Phiole+ColorShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */; };
+		C4EBB8421B15CA650075187B /* Phiole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46043A71AEA383C00C0ED49 /* Phiole.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C460439B1AEA382B00C0ED49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C4EBB8371B15CA560075187B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -32,10 +44,20 @@
 		C46B4C131AEE26D500B95F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Phiole+ColorShortcut.swift"; sourceTree = "<group>"; };
 		C4D606691AF8CABF00E941B6 /* Phiole.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Phiole.podspec; sourceTree = "<group>"; };
+		C4EBB8331B15C2900075187B /* PhioleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhioleColor.swift; sourceTree = "<group>"; };
+		C4EBB8391B15CA560075187B /* PhioleColor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhioleColor; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EBB83B1B15CA560075187B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C460439A1AEA382B00C0ED49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EBB8361B15CA560075187B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,9 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				C46043A71AEA383C00C0ED49 /* Phiole.swift */,
+				C4EBB8331B15C2900075187B /* PhioleColor.swift */,
 				C4D606671AF8CAA600E941B6 /* Phiole+ColorShortcut.swift */,
 				C4D6066A1AF8CAD100E941B6 /* Info */,
 				C460439F1AEA382B00C0ED49 /* Phiole */,
+				C4EBB83A1B15CA560075187B /* PhioleColor */,
 				C460439E1AEA382B00C0ED49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C460439D1AEA382B00C0ED49 /* Phiole */,
+				C4EBB8391B15CA560075187B /* PhioleColor */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +104,14 @@
 				C46B4C131AEE26D500B95F6B /* README.md */,
 			);
 			name = Info;
+			sourceTree = "<group>";
+		};
+		C4EBB83A1B15CA560075187B /* PhioleColor */ = {
+			isa = PBXGroup;
+			children = (
+				C4EBB83B1B15CA560075187B /* main.swift */,
+			);
+			path = PhioleColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +134,23 @@
 			productReference = C460439D1AEA382B00C0ED49 /* Phiole */;
 			productType = "com.apple.product-type.tool";
 		};
+		C4EBB8381B15CA560075187B /* PhioleColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EBB83D1B15CA560075187B /* Build configuration list for PBXNativeTarget "PhioleColor" */;
+			buildPhases = (
+				C4EBB8351B15CA560075187B /* Sources */,
+				C4EBB8361B15CA560075187B /* Frameworks */,
+				C4EBB8371B15CA560075187B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhioleColor;
+			productName = PhioleColor;
+			productReference = C4EBB8391B15CA560075187B /* PhioleColor */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +162,9 @@
 				TargetAttributes = {
 					C460439C1AEA382B00C0ED49 = {
 						CreatedOnToolsVersion = 6.3.1;
+					};
+					C4EBB8381B15CA560075187B = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -128,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				C460439C1AEA382B00C0ED49 /* Phiole */,
+				C4EBB8381B15CA560075187B /* PhioleColor */,
 			);
 		};
 /* End PBXProject section */
@@ -137,10 +191,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D606681AF8CAA600E941B6 /* Phiole+ColorShortcut.swift in Sources */,
 				C46B4C141AEE26D500B95F6B /* README.md in Sources */,
 				C46043A11AEA382B00C0ED49 /* main.swift in Sources */,
 				C46043A81AEA383C00C0ED49 /* Phiole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EBB8351B15CA560075187B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EBB8421B15CA650075187B /* Phiole.swift in Sources */,
+				C4EBB8401B15CA5F0075187B /* PhioleColor.swift in Sources */,
+				C4EBB8411B15CA610075187B /* Phiole+ColorShortcut.swift in Sources */,
+				C4EBB83C1B15CA560075187B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +303,24 @@
 			};
 			name = Release;
 		};
+		C4EBB83E1B15CA560075187B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4EBB83F1B15CA560075187B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -259,6 +341,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C4EBB83D1B15CA560075187B /* Build configuration list for PBXNativeTarget "PhioleColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EBB83E1B15CA560075187B /* Debug */,
+				C4EBB83F1B15CA560075187B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
