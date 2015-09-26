@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org) [![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
              )](https://developer.apple.com/resources/) [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
-             )](https://developer.apple.com/swift) [![Issues](https://img.shields.io/github/issues/phimage/Prephirences.svg?style=flat
+             )](https://developer.apple.com/swift) [![Issues](https://img.shields.io/github/issues/phimage/Phiole.svg?style=flat
            )](https://github.com/phimage/Phiole/issues)
 
 [<img align="left" src="logo-128x128.png" hspace="20">](#logo)
