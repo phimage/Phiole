@@ -30,7 +30,7 @@ import Foundation
 // Check if property XcodeColors set for plugin https://github.com/robbiehanson/XcodeColors
 let XCODE_COLORS: Bool = {
     let dict = NSProcessInfo.processInfo().environment
-    if let env = dict["XcodeColors"] as? String  where env == "YES" {
+    if let env = dict["XcodeColors"] where env == "YES" {
         return true
     }
     return false
@@ -52,12 +52,12 @@ public extension Phiole {
             }
             else {
                 let obj = true
-                objc_setAssociatedObject(self, key.colorize, obj, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+                objc_setAssociatedObject(self, key.colorize, obj, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 return obj
             }
         }
         set {
-            objc_setAssociatedObject(self, key.colorize, newValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+            objc_setAssociatedObject(self, key.colorize, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -68,12 +68,12 @@ public extension Phiole {
             }
             else {
                 let obj = Color.None
-                objc_setAssociatedObject(self, key.outputColor, obj.rawValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+                objc_setAssociatedObject(self, key.outputColor, obj.rawValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 return obj
             }
         }
         set {
-            objc_setAssociatedObject(self, key.outputColor, newValue.rawValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+            objc_setAssociatedObject(self, key.outputColor, newValue.rawValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             colorize = true
         }
     }
@@ -85,12 +85,12 @@ public extension Phiole {
             }
             else {
                 let obj = Color.None
-                objc_setAssociatedObject(self, key.errorColor, obj.rawValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+                objc_setAssociatedObject(self, key.errorColor, obj.rawValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 return obj
             }
         }
         set {
-            objc_setAssociatedObject(self, key.errorColor, newValue.rawValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+            objc_setAssociatedObject(self, key.errorColor, newValue.rawValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             colorize = true
         }
     }

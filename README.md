@@ -3,7 +3,7 @@
             )](http://mit-license.org) [![Platform](http://img.shields.io/badge/platform-iOS/MacOS-lightgrey.svg?style=flat
              )](https://developer.apple.com/resources/) [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
              )](https://developer.apple.com/swift) [![Issues](https://img.shields.io/github/issues/phimage/Phiole.svg?style=flat
-           )](https://github.com/phimage/Phiole/issues)
+           )](https://github.com/phimage/Phiole/issues)  [![Cocoapod](http://img.shields.io/cocoapods/v/Phiole.svg?style=flat)](http://cocoadocs.org/docsets/Phiole/)
 
 [<img align="left" src="logo-128x128.png" hspace="20">](#logo)
 
@@ -15,14 +15,14 @@ let csl = Phiole.std
 ```
 
 This object could be used in script or CLI application instead of using `println()`.
-This adds the following abilities : 
+This adds the following abilities :
 * Write to a file by declaring transparently an [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html) as output stream
 * Write to error stream
 * Read from input stream
 
 [Swift scripts: How to write small command line scripts in Swift](http://practicalswift.com/2014/06/07/swift-scripts-how-to-write-small-command-line-scripts-in-swift/)
 
-:warning: Phiole is not a login system. Use instead project like [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
+:warning: Phiole is not a login system. Use instead project like [SLF4Swift](https://github.com/phimage/SLF4Swift)
 
 # Usage
 ## Write to ouput stream
@@ -50,7 +50,7 @@ Initialize the console object
 ```swift
 var newCsl = csl.withOutput(fileHandle)
 // or with more code
-var newCsl = Phiole(input: input: Phiols.std.input, 
+var newCsl = Phiole(input: input: Phiols.std.input,
                     output: fileHandle, error: Phiols.std.error)
 ```
 Write as usual

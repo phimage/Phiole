@@ -3,13 +3,13 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "Phiole"
-  s.version      = "1.0.2"
+  s.version      = "1.0.0"
   s.summary      = "Allow to write or read from standards stream in swift"
 
   s.description  = <<-DESC
                    Simple object to wrap three NSFileHandle: 'output', 'error' to write and 'input' to read
 
-                   This object could be used in script or CLI application instead of using `println()`.
+                   This object could be used in script or CLI application instead of using `print()`.
                    This adds the following abilities :
                    * Write to a file by declaring transparently an [NSFileHandle](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileHandle_Class/index.html) as output stream
                    * Write to error stream
@@ -39,8 +39,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "Phiole.swift"
-  s.source_files  = "PhioleColor.swift"
+  s.source_files  = "*.swift"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

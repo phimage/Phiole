@@ -195,9 +195,9 @@ private class FileHandleReader  {
         }
         
         // Read data chunks from file until a line delimiter is found
-        var range = buffer.rangeOfData(delimData, options: nil, range: NSMakeRange(0, buffer.length))
+        var range = buffer.rangeOfData(delimData, options: [], range: NSMakeRange(0, buffer.length))
         while range.location == NSNotFound {
-            var tmpData = fileHandle.readDataOfLength(chunkSize)
+            let tmpData = fileHandle.readDataOfLength(chunkSize)
             if tmpData.length == 0 {
                 // EOF or read error.
                 atEof = true
@@ -211,7 +211,7 @@ private class FileHandleReader  {
                 return nil
             }
             buffer.appendData(tmpData)
-            range = buffer.rangeOfData(delimData, options: nil, range: NSMakeRange(0, buffer.length))
+            range = buffer.rangeOfData(delimData, options: [], range: NSMakeRange(0, buffer.length))
         }
         let line = NSString(data: buffer.subdataWithRange(NSMakeRange(0, range.location)),
             encoding: encoding)
