@@ -93,7 +93,7 @@ https://github.com/robbiehanson/XcodeColors
 Then you must add environment variable `XcodeColors` = `YES` in your Scheme
 
 ## More examples
-In [main.swift](/Phiole/main.swift) or [Natalie (generate code from storyboard and ouput to standard stream or specified file)](https://github.com/phimage/Natalie/blob/console/natalie.swift)
+In [main.swift](/Phiole/main.swift)
 
 # Setup #
 
